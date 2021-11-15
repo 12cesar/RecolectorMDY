@@ -7,6 +7,7 @@ import { ResetPasswordScreen } from '../screens/ResetPasswordScreen';
 import { ValidateDniScreen } from '../screens/ValidateDniScreen';
 import { PrivateScreen } from '../screens/PrivateScreen';
 import { BottonNavigator } from './BottonNavigator';
+import { SplashScreen } from '../screens/SplasScreen';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,7 @@ export const StackNavigator =() =>{
             }
         }}
     >
+      <Stack.Screen name="SplashScreen" component={SplashScreen} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
       <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
       <Stack.Screen name="ResetPasswordScreen" component={ResetPasswordScreen} />
